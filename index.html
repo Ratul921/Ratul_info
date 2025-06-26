@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Salman Islam Ratul - Passionate Coder</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f8f9fa, #dfe9f3);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      height: 100vh;
+      background: url('ratul.jpg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+      animation: pulse 8s infinite;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      height: 100%; width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+      z-index: 1;
+      animation: zoomIn 2s ease-in-out;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    .hero p {
+      font-size: 1.5em;
+      margin-top: 10px;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transform: translateY(100px);
+      animation: floatIn 1.2s forwards;
+    }
+
+    section:nth-of-type(2) { animation-delay: 0.5s; }
+    section:nth-of-type(3) { animation-delay: 1s; }
+    section:nth-of-type(4) { animation-delay: 1.5s; }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+      animation: fadeInColor 1s ease-in-out;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    a {
+      color: #3498db;
+      text-decoration: none;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    a:hover {
+      color: #2c3e50;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      animation: slideUp 1.5s ease-in-out;
+    }
+
+    /* Animations */
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #fff, 0 0 10px #1abc9c; }
+      to { text-shadow: 0 0 20px #00ffc3, 0 0 30px #00b894; }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes floatIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeInColor {
+      from { color: #555; }
+      to { color: #2c3e50; }
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2em; }
+      .hero p { font-size: 1em; }
+      section { margin: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Salman Islam Ratul</h1>
+      <p>Student | Anime Lover | Passionate Web Developer</p>
+    </div>
+  </div>
+
+  <section>
+    <h2>About Me</h2>
+    <p>Hello! I'm Ratul, a passionate student of Rajshahi Government City College. I thrive on creativity and curiosity. I dream, design, and develop with heart and soul!</p>
+  </section>
+
+  <section>
+    <h2>My Hobbies</h2>
+    <ul>
+      <li>Watching anime and imagining new worlds</li>
+      <li>Exploring futuristic tech and AI</li>
+      <li>Learning languages — Bengali, English, a touch of Japanese</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:salmansardar009king@gmail.com">salmansardar009king@gmail.com</a></p>
+    <p>Phone: 01339441001</p>
+    <p>Facebook: <a href="https://www.facebook.com/share/1Au66E2fbG/" target="_blank">Click here</a></p>
+    <p>WhatsApp: 01339441001</p>
+    <p>Address: Katakhali Bazar, Katakhali, Paba, Rajshahi, 6212</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Salman Islam Ratul | Crafted with 💖 & code
+  </footer>
+
+</body>
+</html>
